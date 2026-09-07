@@ -2,7 +2,7 @@
 <html lang="ru">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="only light">
 <title>Между потоками</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -44,6 +44,7 @@
   --sans:"Golos Text","Helvetica Neue",Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
 }
+:root{color-scheme:only light}
 /* Страница всегда светлая: тёмная палитра только по явному data-theme="dark" */
 @media (prefers-color-scheme:dark){
   :root[data-theme="dark"]{
